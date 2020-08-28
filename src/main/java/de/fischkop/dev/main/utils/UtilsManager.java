@@ -6,6 +6,11 @@ import javafx.scene.control.Alert;
 import java.io.*;
 import java.util.ArrayList;
 
+/*
+    This is a helper class. It contains things like list something or copy
+    from one place to another. Furthermore, Information dialogs are implemented
+    here and represent a
+ */
 public class UtilsManager {
 
     public static ArrayList<String> listFilesForFolder(File folder) {

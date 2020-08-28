@@ -10,17 +10,25 @@ import java.io.IOException;
 
 public class LiveryManager extends Application {
 
+    //Content panel
     private static AnchorPane mainPane;
     private static AnchorPane listPane;
+
+    //Scenes
     private static Scene mainScene;
     private static Scene listScene;
+
+    //fx stage
     public static Stage stage;
-    public static String fsPath = "D:\\Steam\\steamapps\\common\\FS 2020 Packages\\Community\\";
+
+    //Path for the files
+    public static String fsPath = "Add the path";
 
     public static void main(String[] args) {
         launch(args);
     }
 
+    //starting point of the fx window
     @Override
     public void start(Stage primaryStage) {
         this.stage = primaryStage;

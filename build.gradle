@@ -6,6 +6,16 @@ group 'LiveryManager'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+jar {
+    manifest {
+        attributes 'Main-Class': 'de.fischkop.dev.main.LiveryManager'
+    }
+    from {
+        configurations.compile.collect {
+            it.isDirectory()? it: zipTree(it)
+        }
+    }
+}
 
 repositories {
     mavenCentral()
@@ -14,5 +24,5 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'commons-io', name: 'commons-io', version: '2.4'
-
 }
+
