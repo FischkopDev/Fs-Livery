@@ -50,7 +50,7 @@ public class LiveryManager extends Application {
                 System.exit(0);
             });
             stage.setScene(mainScene);
-            stage.setTitle("FS 2020 Livery Manager");
+            stage.setTitle("FS 2020 Livery Manager | FischkopDev");
             stage.setResizable(false);
             stage.show();
 
